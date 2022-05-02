@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
-use App\Admin\Posts;
+use App\Post;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -44,7 +44,7 @@ class PostsController extends Controller
      * @param  \App\Admin\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function show(Posts $posts)
+    public function show(Post $post)
     {
         //
     }
@@ -55,7 +55,7 @@ class PostsController extends Controller
      * @param  \App\Admin\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function edit(Posts $posts)
+    public function edit(Post $post)
     {
         //
     }
@@ -67,7 +67,7 @@ class PostsController extends Controller
      * @param  \App\Admin\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Posts $posts)
+    public function update(Request $request, Post $post)
     {
         //
     }
@@ -78,7 +78,7 @@ class PostsController extends Controller
      * @param  \App\Admin\Posts  $posts
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Posts $posts)
+    public function destroy(Post $post)
     {
         //
     }
